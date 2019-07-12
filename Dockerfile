@@ -30,7 +30,7 @@ RUN upx /pagespeed_exporter
 ###### STAGE: PACKAGE   ######
 ##############################
 FROM alpine
-MAINTAINER  Bohdan Pastushenko <pastushenko.bohdan@gmail.com.com>
+MAINTAINER  Bohdan Pastushenko <pastushenko.bohdan@gmail.com>
 
 COPY --from=builder /pagespeed_exporter /bin/pagespeed_exporter
 
