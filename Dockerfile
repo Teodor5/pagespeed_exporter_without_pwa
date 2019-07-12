@@ -19,7 +19,7 @@ COPY . ./
 ###### STAGE: BUILD     ######
 ##############################
 FROM base as builder
-MAINTAINER  Bohdan Pastushenko <patushenko.bohdan@gmail.com.com>
+MAINTAINER  Bohdan Pastushenko <pastushenko.bohdan@gmail.com>
 
 RUN go build -ldflags "-X main.Version=`git rev-parse --short HEAD`" -o /pagespeed_exporter pagespeed_exporter.go
 
