@@ -2,7 +2,7 @@ package handler
 
 import (
 	"context"
-	"github.com/foomo/pagespeed_exporter/collector"
+	"github.com/Teodor5/pagespeed_exporter_without_pwa/collector"
 	"github.com/pkg/errors"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"

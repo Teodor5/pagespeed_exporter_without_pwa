@@ -10,7 +10,7 @@ replicas: 1
 
 image:
   name: pagespeed_exporter
-  repository: foomo/pagespeed_exporter
+  repository: bpastushenko/pagespeed_exporter_without_pwa
   tag: latest
   pullPolicy: Always
 

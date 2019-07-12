@@ -2,8 +2,8 @@ package main
 
 import (
 	"flag"
-	"github.com/foomo/pagespeed_exporter/collector"
-	"github.com/foomo/pagespeed_exporter/handler"
+	"github.com/Teodor5/pagespeed_exporter_without_pwa/collector"
+	"github.com/Teodor5/pagespeed_exporter_without_pwa/handler"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	log "github.com/sirupsen/logrus"

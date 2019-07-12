@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/foomo/pagespeed_exporter/collector"
+	"github.com/Teodor5/pagespeed_exporter_without_pwa/collector"
 )
 
 var (

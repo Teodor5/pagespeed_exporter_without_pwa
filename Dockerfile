@@ -2,7 +2,7 @@
 # Builder Base
 # -----------------------------------------------------------------------------
 FROM golang:alpine as base
-MAINTAINER  Stefan Martinov <stefan.martinov@bestbytes.com>
+MAINTAINER  Bohdan Pastushenko <patushenko.bohdan@gmail.com.com>
 
 RUN apk add --no-cache git make bash upx \
   && rm -rf /var/cache/apk/*
@@ -19,7 +19,7 @@ COPY . ./
 ###### STAGE: BUILD     ######
 ##############################
 FROM base as builder
-MAINTAINER  Stefan Martinov <stefan.martinov@bestbytes.com>
+MAINTAINER  Bohdan Pastushenko <patushenko.bohdan@gmail.com.com>
 
 RUN go build -ldflags "-X main.Version=`git rev-parse --short HEAD`" -o /pagespeed_exporter pagespeed_exporter.go
 
@@ -30,7 +30,7 @@ RUN upx /pagespeed_exporter
 ###### STAGE: PACKAGE   ######
 ##############################
 FROM alpine
-MAINTAINER  Stefan Martinov <stefan.martinov@bestbytes.com>
+MAINTAINER  Bohdan Pastushenko <pastushenko.bohdan@gmail.com.com>
 
 COPY --from=builder /pagespeed_exporter /bin/pagespeed_exporter
 

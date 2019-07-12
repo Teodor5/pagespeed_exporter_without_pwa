@@ -1,4 +1,4 @@
-module github.com/foomo/pagespeed_exporter
+module github.com/Teodor5/pagespeed_exporter_without_pwa
 
 go 1.12
 
