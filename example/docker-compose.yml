@@ -6,7 +6,7 @@ volumes:
 
 services:
   pagespeed_exporter:
-    image: foomo/pagespeed_exporter:latest
+    image: bpastushenko/pagespeed_exporter_without_pwa:latest
     restart: unless-stopped
     ports:
       - "9271:9271"
