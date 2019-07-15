@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	DefaultTimeoutDuration  = 30 * time.Second
+	DefaultTimeoutDuration  = 120 * time.Second
 	DefaultTimeOffset       = 500 * time.Millisecond // To Allow For Processing Time
 	PrometheusTimeoutHeader = "X-Prometheus-ScrapeResult-Timeout-Seconds"
 )

@@ -50,7 +50,7 @@ func Test_getScrapeTimeout(t *testing.T) {
 		wantErr     bool
 	}{
 		{"default", args{}, DefaultTimeoutDuration, false},
-		{"set", args{header: "30.5"}, 30 * time.Second, false},
+		{"set", args{header: "30.5"}, 120 * time.Second, false},
 		{"invalid", args{header: "derp"}, 0, true},
 	}
 	for _, tt := range tests {

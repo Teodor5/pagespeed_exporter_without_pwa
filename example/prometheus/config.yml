@@ -2,7 +2,7 @@ global:
   # Important to note, that scrape times > 5minutes can't be handled
   # by grafana gracefully and will be treated as scarce metrics
   scrape_interval:  5m # By default, scrape targets every 15 seconds.
-  scrape_timeout: 120s
+  scrape_timeout: 300ms
 
 scrape_configs:
   - job_name: pagespeed_exporter_metrics
